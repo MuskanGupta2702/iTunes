@@ -71,7 +71,7 @@ nav ul li{
     margin: 23px auto;
     width: 70%;
     border-radius: 12px;
-    padding: 34px;
+    padding: 26px;
     background-image:url("bg.jpg") ;
     background-position: center; /*Center the image*/
     background-repeat: no-repeat;
@@ -110,7 +110,8 @@ nav ul li{
 
 .songList{
     overflow-y: auto;
-    padding: 0 20px;
+    padding: 0 15px;
+    width: 55%;
 }
 
 .songItemContainer{
@@ -123,7 +124,7 @@ nav ul li{
     height: 50px;
     display: flex;
     align-items: center;
-    margin: 15px;
+    margin: 15px 15px 15px 0px;
     padding: 5px;
 }
 
@@ -183,6 +184,7 @@ nav ul li{
     .songList {
         padding: 0 5px 0px 0px;
         background: rgba(0,0,0,0.8);
+        width: 100%;
     }
 
     .songItem {
