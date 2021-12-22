@@ -19,6 +19,10 @@ let songs = [
     {songName: "Tumhi Ho Bandhu", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
     {songName: "Something Just Like This", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
     {songName: "Sooraj Dooba hai", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
+    {songName: "Mast Magan", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
+    {songName: "Alone II", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
+    {songName: "Tu Chahiye", filePath: "songs/10.mp3", coverPath: "covers/3.jpg" },
+    {songName: "Alone I", filePath: "songs/11.mp3", coverPath: "covers/9.jpg" },
 ]
 
 function getDuration(src, cb) {
@@ -96,7 +100,7 @@ songItemPlay.forEach((element)=>{
         let list = Array.from(e.target.classList)
         if(list.includes('fa-pause'))
         {
-            console.log('pause')
+            // console.log('pause')
             makeAllPlay();
             songIndex = parseInt(e.target.id);
             audioElement.src = `songs/${songIndex + 1}.mp3`;
@@ -107,7 +111,7 @@ songItemPlay.forEach((element)=>{
             masterSongName.innerText = songs[songIndex].songName;
         }
         else{
-            console.log('play')
+            // console.log('play')
             makeAllPlay();
             songIndex = parseInt(e.target.id);
             audioElement.src = `songs/${songIndex + 1}.mp3`;
