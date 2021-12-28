@@ -23,6 +23,8 @@ let songs = [
     {songName: "Alone II", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
     {songName: "Tu Chahiye", filePath: "songs/10.mp3", coverPath: "covers/3.jpg" },
     {songName: "Alone I", filePath: "songs/11.mp3", coverPath: "covers/9.jpg" },
+    {songName: "Main Hoon Hero Tera", filePath: "songs/12.mp3", coverPath: "covers/10.jpg" },
+    {songName: "Yeh ishq haye", filePath: "songs/13.mp3", coverPath: "covers/11.jpg" },
 ]
 
 function getDuration(src, cb) {
@@ -130,7 +132,7 @@ songItemPlay.forEach((element)=>{
 })
 
 document.getElementById('next').addEventListener('click', ()=>{
-    if(songIndex > 9){
+    if(songIndex > 12){
         songIndex = 0;
     }
     else{
